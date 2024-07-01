@@ -1,0 +1,83 @@
+/*Responsive Design*/
+@media (max-width: 1200px) {
+    .nav-bar .navbar-menu {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .nav-bar .navbar-menu,
+    .search-bar,
+    .toggle-img {
+        display: none;
+    }
+
+    .nav-bar .icon,
+    .toggle-btn button {
+        display: block;
+    }
+
+    .drop-down-menu {
+        display: block;
+        left: 2rem;
+        width: unset;
+    }
+}
+
+@media (max-width: 690px) {
+    .nav-bar .icon,
+    .darkmode-btn button,
+    .toggle-btn button {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 475px) {
+    .nav-bar .icon {
+        display: none;
+    }
+
+    .darkmode-btn button,
+    .toggle-btn button {
+        font-size: 1.5rem;
+    }
+
+    .nav-bar {
+        justify-content: space-evenly
+    }
+}
+
+@media (max-width: 300px) {
+    .darkmode-btn button,
+    .toggle-btn button {
+        font-size: 1.5rem;
+    }
+
+    .nav-bar {
+        justify-content: space-evenly;
+    }
+
+    .drop-down-menu {
+        justify-content: center;
+    }
+
+    .drop-down-menu li {
+        text-align: center;
+    }
+
+    .drop-down-menu li a {
+        font-size: 10px;
+    }
+
+    .drop-down-menu.open {
+        height: 140px;
+    }
+}
+
+@media (max-width: 220px) {
+    .darkmode-btn button,
+    .toggle-btn button,
+    .drop-down-menu {
+        display: none;
+    }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage -->
+    <title>NavBar</title>
+    <link rel="icon" type="icon" href="assets/favicon.png">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/nav.responsive.css">
+</head>
+<body>
+    <header>
+        <!-- Navbar body  -->
+        <div class="nav-bar">
+            <div class="marvel-logo"><a href="about.html"><img src="assets/marvel-logo.png" alt="MarvelPedia"></a></div>
+            <!-- Navigation links -->
+            <ul class="navbar-links">
+                <li><a href="index.html"><button><span class="navbar-menu">Home</span> <span class="fa-solid fa-house-chimney icon"></span></button></a></li>
+                <li><a href="favouritehero.html"><button><span class="navbar-menu">My Favourite Heros</span> <span class="fa-solid fa-heart icon"></span></button></a></li>
+                <li><a href="contact.html"><button><span class="navbar-menu">Contact</span> <span class="fa-solid fa-phone-volume icon"></span></button></a></li>
+            </ul>
+            <!-- Search bar -->
+            <div class="search-bar">
+                <input type="text" placeholder="Search for superheros..." id="search-box" onclick="activateSearchFunction()">
+                <button class="fa-solid fa-magnifying-glass" id ='search-button'></button>
+            </div>
+            <div class="darkmode-btn"><button class="fa-solid fa-sun"></button></div>
+            <div class="toggle-btn">
+                <button class="fa-solid fa-bars"></button>
+                <img src="assets/ironman.png" alt="Iron Man" class="toggle-img">
+            </div>
+        <!-- Dropdown menu for smaller screens -->
+        <div class="drop-down-menu">
+            <ul>
+            <li><a href="about.html" class="navbar-dropdown-menu"><b>About Us</b></a></li>
+            <li><a href="index.html" class="navbar-dropdown-menu"><b>Home</b></a></li>
+            <li><a href="favouritehero.html" class="navbar-dropdown-menu"><b>My Favourite Superheros</b></a></li>
+            <li><a href="contact.html" class="navbar-dropdown-menu"><b>Contact</b></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- FontAwesome for icon support -->
+    <script src="https://kit.fontawesome.com/6cfb77a7f4.js" crossorigin="anonymous"></script>
+    <!-- Custom JavaScript file for navigation features -->
+    <script src="sources/nav.features.js"></script>
+
+</body>
+</html>

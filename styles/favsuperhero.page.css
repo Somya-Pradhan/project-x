@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#fav-superheros-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+}
+
+.card{
+    flex: 0 0 calc(25% - 25px);
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--clr-chromewhite);
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 25px;
+    border: 2px solid var(--clr-leafgreen);
+}
+.card:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.card img{
+    height: 300px;
+}
+.card-footer{
+    border: 1px solid var(--clr-leafgreen);
+}
+.fa-heart-circle-plus,
+.fa-heart-circle-minus{
+    color: var(--clr-red);
+    font-size: 30px;
+}
+.view-details{
+    width: 50%;
+    font-weight: 300;
+    font-size: 30px;
+    border: 1px solid var(--clr-dark);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.view-details:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -30px 36px -25px inset;
+}
+
+.no-data-found-container{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+.no-data-found-container img{
+    width: 300px;
+    height: 300px;
+}
+
+.sorry-title{
+    width: 70%;
+    height:100%;
+}
+.no-data-found-container h1{
+    text-align: center;
+    font-size: 78px;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*Responsive Design*/
+@media(max-width:1320px){
+    .view-details{
+        font-size: 25px;
+    }
+}
+
+@media(max-width:1140px){
+    .card{
+        flex: 0 0 calc(33% - 25px);
+    }
+    .no-data-found-container img{
+        width: 250px;
+        height: 250px;
+    }
+    .no-data-found-container h1{
+        font-size: 60px;
+    }
+}
+
+@media(max-width:960px){
+    .card{
+        flex: 0 0 calc(50% - 25px);
+    }
+    .no-data-found-container img{
+        width: 200px;
+        height: 200px;
+    }
+    .no-data-found-container h1{
+        font-size: 50px;
+    }
+}
+
+@media(max-width:540px){
+    .card{
+        flex: 0 0 calc(75% - 25px);
+    }
+    .no-data-found-container img{
+        width: 100px;
+        height: 100px;
+    }
+    .no-data-found-container h1{
+        font-size: 30px;
+    }
+}
